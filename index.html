@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta bilgileri -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Log in, Sign in, Username, Password, Create account, Authentication">
+    <meta name="description" content="Web Site Login Pages | Hurşut Pekyorgun">
+    <title>Web Site Login Pages | Efecan Canbaz</title>
+    <!-- CSS dosyalarının bağlantıları -->
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- JavaScript dosyasının bağlantısı -->
+    <script src="code.js"></script>
+</head>
+<body>
+    <header>
+        <!-- Site logosu -->
+        <div class="logo">Efecan Canbaz</div>
+        <!-- Navigasyon menüsü -->
+        <nav class="nav-bar">
+            <ul>
+                <!-- Navigasyon öğeleri -->
+                <li>
+                    <a href="#" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#" class="btn-login">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <form action="">
+          <h1>Login</h1>
+          <div class="input-box">
+            <input type="text" placeholder="Username" required>
+            <i class='bx bxs-user'></i>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="Password" required>
+            <i class='bx bxs-lock-alt' ></i>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox">Remember Me</label>
+            <a href="#">Forgot Password</a>
+          </div>
+          <button type="submit" class="btn" onclick="girisKontrol(document.getElementById('Username').value,document.getElementById('password').value)">Login</button>
+          <div class="register-link">
+            <p>Dont have an account? <a href="#">Register</a></p>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
